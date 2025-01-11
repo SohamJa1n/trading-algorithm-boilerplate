@@ -1,7 +1,7 @@
 {
   "general": {
     "ticker": "JPM",
-    "simulate": false,
+    "simulate": true,
     "mostRecent": true,
     "interval": "1d",
     "timePeriod": "2y",
@@ -14,8 +14,8 @@
   },
   "indicators": {
     "maPeriod": 50,
-    "rsiPeriod": 10,
-    "atrPeriod": 16,
+    "rsiPeriod": 11,
+    "atrPeriod": 23,
     "stdDevPeriod": 26
   },
   "simulate": {
@@ -28,17 +28,17 @@
   "account": {
     "initialBalance": 10000,
     "baseOrderValue": 1000,
-    "maxOrderValue": 5224,
+    "maxOrderValue": 2194,
     "maxConcurrentPositions": 5
   },
   "multipliers": {
-    "buyMultiplier": 1.6607800313783787,
-    "bandMultiplier": 1.2885586823330233,
-    "stoplossAtrMultiplier": 1.99,
-    "takeprofitAtrMultiplier": 2.73
+    "buyMultiplier": 1.932336172873068,
+    "bandMultiplier": 1.465962650804113,
+    "stoplossAtrMultiplier": 1.78,
+    "takeprofitAtrMultiplier": 2.69
   },
   "strategy1": {
-    "A": 3.43,
-    "B": 1.51
+    "A": 3.75,
+    "B": 1.59
   }
 }

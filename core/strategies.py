@@ -3,14 +3,12 @@ import math
 
 config = api.get_settings()
 
-"""
-Format your strategies responses as a dict with the values you need.
 
-Example:
-
-response = {
-    "buy": True,
-    "price": current_candle["open"],
-    "amount": config["account"]["baseOrderValue"],
-}
-"""
+def strategy(candles):
+    if candles['rsi'] <= 30.0:
+        response = {'buy': True,
+                    'price': candles['open'],
+                    'amount': config['account']['baseOrderValue']}
+    else:
+        response = {'buy': False}
+    return response

@@ -107,7 +107,7 @@ def indicators(account, data):
 
             You do not need to worry about triggering sell signals
             unless you opt not to use stop loss/take profit
-
+  
 
 
 
@@ -124,7 +124,10 @@ def indicators(account, data):
             <========== Remove stoploss/takeprofit: ==========>
             stoploss_takeprofit.remove()
             """
-
+        '''strategy_response = strategies.strategy(candle)
+        if strategy_response["buy"] == True:
+            buy(entries, initial_buy_amount, candles[i]["open"])
+            stoploss_takeprofit.update(candles[i]["open"], candles[i]["atr"], candles[i]["datetime"])'''
         # <==================== Add your custom indicator logic above ====================>
 
         # Logic for checking if price has breached stoploss/takeprofit:
